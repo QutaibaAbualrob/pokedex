@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "lib": ["es2022"],
     "module": "nodenext",
     "rootDir": "./src",
     "outDir": "./dist",
