@@ -4,7 +4,10 @@
   "description": "bootdev project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "start": "node dist/main.js",
+    "dev": "npx tsc && node dist/main.js",
+    "test": "vitest --run"
   },
   "repository": {
     "type": "git",
@@ -18,12 +21,8 @@
   "homepage": "https://github.com/QutaibaAbualrob/pokedex#readme",
   "devDependencies": {
     "@types/node": "^26.1.2",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
   },
-  "type": "module",
-  "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/main.js",
-    "dev": "npx tsc && node dist/main.js"
-  }
+  "type": "module"
 }
